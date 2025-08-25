@@ -1,7 +1,7 @@
 This project is about classifying the images of structural bridge bearings. The bridge bearings can be classified as one of "Good", "Fair", "Poor" and "Severe".
 The dataset was taken from [University Libraries of Virginia Tech](https://data.lib.vt.edu/articles/dataset/Bearing_Condition_State_Classification_Dataset/16624642)
 
-The original dataset was highly imbalanced. The distribution of the images are as follows:
+The original dataset is highly imbalanced. The distribution of the images are as follows:
 
 | Condition State | # Images in training dataset | # Images in test dataset |
 | :-------------- | :--------------------------: | -----------------------: |
@@ -9,8 +9,6 @@ The original dataset was highly imbalanced. The distribution of the images are a
 | Fair (2)        |         215                  |            23            |
 | Poor (3)        |         450                  |            50            |
 | Severe (4)      |         90                   |            9             |
-
-As one can observe this is highly imbalanced dataset.
 
 **Problem Statement:**
 
