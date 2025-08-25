@@ -31,4 +31,4 @@ To predict the condition state of a bridge bearing given its image
 
 * The accuracy of the ensemle model was 70% on the test dataset.
 
-* The ensemble models is hosted on HugginFace and can be accessed [here](https://huggingface.co/spaces/Hemanth-TN/Bearing-Classification?logs=container)
+* The ensemble model is hosted on HugginFace and can be accessed [here](https://huggingface.co/spaces/Hemanth-TN/Bearing-Classification?logs=container)
