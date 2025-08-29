@@ -192,21 +192,25 @@ def augment_data_2():
 
     transformations = {'1': [transforms.Compose([transforms.Resize((300,300))]),
                             transforms.Compose([transforms.RandomVerticalFlip(p=1)]),
-                            transforms.Compose([transforms.RandomAutocontrast(p=1)])],
+                            transforms.Compose([transforms.RandomAutocontrast(p=1)]),
+                            transforms.RandomResizedCrop(size=300, scale=(0.5,0.6))],
                         '2': [transforms.Compose([transforms.Resize((300,300))]),
                             transforms.Compose([transforms.RandomVerticalFlip(p=1)]),
-                            transforms.Compose([transforms.RandomAutocontrast(p=1)])],
+                            transforms.Compose([transforms.RandomAutocontrast(p=1)]),
+                            transforms.RandomResizedCrop(size=300, scale=(0.5,0.6))],
                         '3':[transforms.Compose([transforms.Resize((300,300))]),
                             transforms.Compose([transforms.RandomVerticalFlip(p=1)]),
-                            transforms.Compose([transforms.RandomAutocontrast(p=1)])],
+                            transforms.Compose([transforms.RandomAutocontrast(p=1)]),
+                            transforms.RandomResizedCrop(size=300, scale=(0.5,0.6))],
                         '4':[transforms.Compose([transforms.Resize((300,300))]),
                             transforms.Compose([transforms.RandomVerticalFlip(p=1)]),
-                            transforms.Compose([transforms.RandomAutocontrast(p=1)])]
+                            transforms.Compose([transforms.RandomAutocontrast(p=1)]),
+                            transforms.RandomResizedCrop(size=300, scale=(0.5,0.6))]
                         }
-    transformations_name = {'1':['Original', 'VerticalFlip', 'Autocontrast'],
-                            '2': ['Original', 'VerticalFlip', 'Autocontrast'],
-                            '3': ['Original', 'VerticalFlip', 'Autocontrast'],
-                            '4': ['Original', 'VerticalFlip', 'Autocontrast']}
+    transformations_name = {'1':['Original', 'VerticalFlip', 'Autocontrast','ResizedCrop'],
+                            '2': ['Original', 'VerticalFlip', 'Autocontrast', 'ResizedCrop'],
+                            '3': ['Original', 'VerticalFlip', 'Autocontrast', 'ResizedCrop'],
+                            '4': ['Original', 'VerticalFlip', 'Autocontrast', 'ResizedCrop']}
 
     train_dst_dir.mkdir(exist_ok=True, parents=True)
 
