@@ -16,7 +16,7 @@ To predict the condition state of a bridge bearing given its image
 
 **Solution Approach:**
 
-* Leverage transfer learning to use the [EfficientNet Models](https://docs.pytorch.org/vision/0.21/models/efficientnet.html)
+* Leverage transfer learning by using [EfficientNet Models](https://docs.pytorch.org/vision/0.21/models/efficientnet.html)
 
     It is difficult to come up with a model rom scratch. It is easier to use pretrained model that build on similar dataset. In this project, the EffiicentNet models were chosen to classify the condition state of bridge bearings. The EfficientNet model cannot be used as it is for this problem, as the dataset that were used to build the EfficientNet models had 1000 classes while there are only four condition states viz. 'good', 'fair', 'poor', and 'severe'. So the classifier head was modified to suit the current problem of 4 classes. 
     Additionally, to take advantage of the trained EfficientNet model, the learned parameters of the features were freezed at their best values so that optimized weights do not change during the training process. The models used in this project were EfficientNet b0, EfficientNet b1, EfficientNet b2, EfficientNet b3 and EfficientNet b4. Furthermore, two optimizers (Adam with learing rate of 0.001 and SGD with learning rate of 0.1) were used for each these models resulting in 10 EfficientNet models.
