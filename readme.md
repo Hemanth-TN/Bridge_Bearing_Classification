@@ -45,12 +45,12 @@ To predict the condition state of a bridge bearing given its image
 
     The number images in each category after this data augmentation procedure is as follows:
 
-        | Condition State | # Images in training dataset | # Images in test dataset |
-        | :-------------- | :--------------------------: | -----------------------: |
-        | Good (1)        |         1984                 |            13            |
-        | Fair (2)        |         1720                 |            23            |
-        | Poor (3)        |         1800                 |            50            |
-        | Severe (4)      |         1800                 |            9             |
+| Condition State | # Images in training dataset | # Images in test dataset |
+| :-------------- | :--------------------------: | -----------------------: |
+| Good (1)        |         1984                 |            13            |
+| Fair (2)        |         1720                 |            23            |
+| Poor (3)        |         1800                 |            50            |
+| Severe (4)      |         1800                 |            9             |
 
 * Key Takeaway:
     The machine building process is an iterative process. one need not figure out everything to get started. I just started with the data that I was available. As the bottlenecks surface, the solutions can be implemented by seeking help from subject matter experts, online searching or thinking about ways to implement the next iteration. I found the tensorboard extremely helpful in keeping track of the experiments. This is the key feature of MLops.
